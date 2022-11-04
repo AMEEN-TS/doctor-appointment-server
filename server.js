@@ -17,7 +17,6 @@ app.listen(port, () =>console.log(`server start ${port}`));
 app.use(cors({
 
     origin: ["https://doctor-appointment-client-ameen-ts.vercel.app"],
-    methods: ['GET', 'POST',"PUT","PATCH"],
     credentials: true,
 
 }));
