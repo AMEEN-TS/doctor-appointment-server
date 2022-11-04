@@ -14,4 +14,4 @@ app.listen(port, () =>console.log(`server start ${port}`));
 
 app.use('/api/user',userRoute);
 app.use('/api/admin',adminRoute);
-app.use('/api/doctor',doctorRouter);
+app.use('/api/doctor',doctorRouter); 
