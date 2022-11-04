@@ -7,7 +7,7 @@ const userRoute = require("./routes/userRouter");
 const adminRoute = require('./routes/adminRouter');
 const doctorRouter = require("./routes/doctorRouter");
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 
 app.listen(port, () =>console.log(`server start ${port}`));
