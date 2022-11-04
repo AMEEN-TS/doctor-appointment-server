@@ -289,7 +289,7 @@ module.exports.getApprovedDoctor = async (req, res) => {
 
 };
 module.exports.checkAvilable = async (req, res) => {
-  console.log("fffffffffffffffff")
+  
   try {
 
     const timeAnddate = moment(req.body.dateAndtime).format('llll');
@@ -303,7 +303,7 @@ module.exports.checkAvilable = async (req, res) => {
       dateAndtime: timeAnddate
 
     });
-    console.log(appointment, "sssssssssss")
+    
     if (appointment.length > 0) {
       return res.status(200).send({ message: "Appointments not available", success: false, })
     } else {
