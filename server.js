@@ -14,9 +14,15 @@ const port = process.env.PORT || 5000;
 app.listen(port, () =>console.log(`server start ${port}`));
 
 // app.use(cors())
+// app.use(cors({
+
+//     origin: ["https://doctor-appointment-client-ameen-ts.vercel.app"],
+//     credentials: true,
+
+// }));
 app.use(cors({
 
-    origin: ["https://doctor-appointment-client-ameen-ts.vercel.app"],
+    origin: ["https://doctor-appointment-client-iota.vercel.app"],
     credentials: true,
 
 }));
