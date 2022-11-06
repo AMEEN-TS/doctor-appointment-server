@@ -20,12 +20,7 @@ app.use(cors({
     credentials: true,
 
 }));
-// app.use(cors({
 
-//     origin: ["https://doctor-appointment-client-iota.vercel.app"],
-//     credentials: true,
-
-// }));
 
 app.use('/api/user',userRoute);
 app.use('/api/admin',adminRoute);
